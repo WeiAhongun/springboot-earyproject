@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_book?serverTimezone=UTC
+    username: root
+    password: root
+  jackson:
+    date-format: yyyy-MM-dd
+  mail:
+    host: smtp.163.com
+    username: a1293233730@163.com
+    password: NHDSUDADYBYOEEYF
+logging:
+  level:
+    com:
+      shangma :
+        cn:
+          mapper: debug
+  file:
+    name: E:\\user.log
+mybatis:
+  #mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
